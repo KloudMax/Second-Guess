@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ==================== HEAD SETTINGS ==================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Guess - Smart Inventory Tracker</title>
+    
+    <!-- External dependencies -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
+
+    <!-- ==================== CUSTOM STYLES ==================== -->
+    <style>
+        /* ---------- Global Styles ---------- */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F5F5F5; /* Light grey background */
-            color: #374151; /* Default text color (Tailwind gray-700) */
+            background-color: #F5F5F5;
+            color: #374151;
         }
-        .hero-bg {
-            background-color: #F5F5F5; /* Light grey for hero */
-        }
-        .section-bg-white {
-            background-color: #FFFFFF; /* White for specific sections */
-        }
-        .section-bg-light-gray {
-            background-color: #F5F5F5; /* Light grey for alternating sections */
-        }
-        .text-teal {
-            color: #008080; /* Teal for accents */
-        }
-        .bg-teal {
-            background-color: #008080; /* Teal for buttons, accents */
-        }
-        .border-teal {
-            border-color: #008080;
-        }
-        .hover-bg-teal-dark:hover {
-            background-color: #006666; /* Darker teal for hover */
-        }
-        .icon-teal {
-            color: #008080;
-        }
+
+        /* ---------- Color Utilities ---------- */
+        .hero-bg { background-color: #F5F5F5; }
+        .section-bg-white { background-color: #FFFFFF; }
+        .section-bg-light-gray { background-color: #F5F5F5; }
+        .text-teal { color: #008080; }
+        .bg-teal { background-color: #008080; }
+        .border-teal { border-color: #008080; }
+        .hover-bg-teal-dark:hover { background-color: #006666; }
+        .icon-teal { color: #008080; }
+
+        /* ---------- Component Styles ---------- */
         .app-screenshot-placeholder {
-            background-color: #E0E0E0; /* Placeholder color for screenshot */
+            background-color: #E0E0E0;
             border: 2px dashed #008080;
             display: flex;
             align-items: center;
@@ -46,41 +40,42 @@
             text-align: center;
             color: #008080;
             font-size: 0.9rem;
-            border-radius: 12px; /* Rounded corners for the placeholder */
-            overflow: hidden; /* Ensures image corners are also rounded */
+            border-radius: 12px;
+            overflow: hidden;
         }
+
         .app-screenshot-placeholder img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
+
         .feature-card {
             background-color: #FFFFFF;
-            border-radius: 12px; /* Rounded corners for cards */
+            border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
+
         .testimonial-card {
             background-color: #FFFFFF;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
+
         .cta-button {
-            padding: 0.75rem 2rem; /* Adjusted padding for better look */
-            border-radius: 8px; /* Rounded corners for buttons */
-            font-weight: 600; /* Semi-bold */
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
             transition: background-color 0.3s ease;
         }
-        .app-store-badge {
-            display: inline-block;
-            height: 40px; /* Adjust as needed */
-            margin: 0 5px;
-        }
-         /* Ensure responsiveness for smaller screens */
+
+        /* ---------- Mobile Responsiveness ---------- */
         @media (max-width: 768px) {
             .hero-content {
                 flex-direction: column;
@@ -90,7 +85,7 @@
                 margin-bottom: 2rem;
             }
             .app-screenshot-container {
-                max-width: 80%; /* Control size on mobile */
+                max-width: 80%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -102,7 +97,7 @@
                 margin-bottom: 2rem;
             }
             .feature-grid {
-                grid-template-columns: 1fr; /* Stack features on mobile */
+                grid-template-columns: 1fr;
             }
             .how-it-works-steps {
                 flex-direction: column;
@@ -111,55 +106,53 @@
             .how-it-works-step {
                 margin-bottom: 1.5rem;
                 width: 100%;
-                max-width: 350px; /* Max width for steps on mobile */
+                max-width: 350px;
             }
             .testimonial-grid {
-                grid-template-columns: 1fr; /* Stack testimonials on mobile */
+                grid-template-columns: 1fr;
             }
         }
-    </style>    
+    </style>
 </head>
 <body>
-
-    <!-- Navbar -->
+    <!-- ==================== NAVBAR ==================== -->
     <nav class="section-bg-white shadow-sm sticky top-0 z-50">
-        <!-- ... (keep existing nav content) ... -->
+        <!-- Nav content remains unchanged -->
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ==================== HERO SECTION ==================== -->
     <header class="hero-bg py-16 md:py-24">
-        <!-- ... (keep existing hero content) ... -->
+        <!-- Hero content remains unchanged -->
     </header>
 
-    <!-- Problem/Solution Section -->
+    <!-- ==================== PROBLEM/SOLUTION SECTION ==================== -->
     <section class="section-bg-white py-16 md:py-20">
-        <!-- ... (keep existing content) ... -->
+        <!-- Problem/solution content remains unchanged -->
     </section>
 
-    <!-- Features Section -->
+    <!-- ==================== FEATURES SECTION ==================== -->
     <section id="features" class="section-bg-light-gray py-16 md:py-20">
-        <!-- ... (keep existing content) ... -->
+        <!-- Features content remains unchanged -->
     </section>
 
-    <!-- How It Works Section -->
+    <!-- ==================== HOW IT WORKS SECTION ==================== -->
     <section class="section-bg-white py-16 md:py-20">
-        <!-- ... (keep existing content) ... -->
+        <!-- How-it-works content remains unchanged -->
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
     <section class="section-bg-light-gray py-16 md:py-20">
-        <!-- ... (keep existing content) ... -->
+        <!-- Testimonials content remains unchanged -->
     </section>
 
-    <!-- CTA Section -->
+    <!-- ==================== CTA SECTION ==================== -->
     <section id="download" class="bg-teal py-16 md:py-24">
-        <!-- ... (keep existing content) ... -->
+        <!-- CTA content remains unchanged -->
     </section>
 
-    <!-- Footer -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="section-bg-white py-8">
-        <!-- ... (keep existing footer content) ... -->
+        <!-- Footer content remains unchanged -->
     </footer>
-
 </body>
 </html>
