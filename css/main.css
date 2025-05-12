@@ -1,41 +1,18 @@
-/* css/main.css */
+/* Custom Styles */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F5F5F5;
     color: #374151;
 }
 
-.hero-bg {
-    background-color: #F5F5F5;
-}
-
-.section-bg-white {
-    background-color: #FFFFFF;
-}
-
-.section-bg-light-gray {
-    background-color: #F5F5F5;
-}
-
-.text-teal {
-    color: #008080;
-}
-
-.bg-teal {
-    background-color: #008080;
-}
-
-.border-teal {
-    border-color: #008080;
-}
-
-.hover-bg-teal-dark:hover {
-    background-color: #006666;
-}
-
-.icon-teal {
-    color: #008080;
-}
+.hero-bg { background-color: #F5F5F5; }
+.section-bg-white { background-color: #FFFFFF; }
+.section-bg-light-gray { background-color: #F5F5F5; }
+.text-teal { color: #008080; }
+.bg-teal { background-color: #008080; }
+.border-teal { border-color: #008080; }
+.hover-bg-teal-dark:hover { background-color: #006666; }
+.icon-teal { color: #008080; }
 
 .app-screenshot-placeholder {
     background-color: #E0E0E0;
@@ -79,12 +56,6 @@ body {
     border-radius: 8px;
     font-weight: 600;
     transition: background-color 0.3s ease;
-}
-
-.app-store-badge {
-    display: inline-block;
-    height: 40px;
-    margin: 0 5px;
 }
 
 @media (max-width: 768px) {
