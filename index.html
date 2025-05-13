@@ -40,7 +40,8 @@
         .app-screenshot-placeholder {
             background-color: #E0E0E0; /* Placeholder color for screenshot */
             border: 2px dashed #008080;
-            display: flex;
+            display: block;
+            position: relative;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -157,8 +158,8 @@
                         <i class="fab fa-brave mx-1"></i> Brave
                         
                         </div>
-                <div class="md:w-1/2 app-screenshot-container">
-    <div id="auto-scroll-container" class="flex overflow-x-auto space-x-4 w-full h-72 md:h-96 p-4">
+               <div class="relative overflow-hidden md:w-1/2 app-screenshot-container">
+    <div id="auto-scroll-container" class="flex overflow-x-auto space-x-4 w-full max-w-full h-72 md:h-96 p-4">
         <img src="https://raw.githubusercontent.com/KloudMax/Second-Guess/refs/heads/main/images/DID-I-BUY-THIS.png" alt="App Screenshot - Did I Already Buy This?" class="rounded-lg shadow-2xl object-contain">
         <img src="https://raw.githubusercontent.com/KloudMax/Second-Guess/refs/heads/main/images/TRACK-THIS.png" alt="App Screenshot - Add to Tracker!" class="rounded-lg shadow-2xl object-contain">
         <img src="https://raw.githubusercontent.com/KloudMax/Second-Guess/refs/heads/main/images/TRACK-THIS.png" alt="App Screenshot - Add to Wishlist!" class="rounded-lg shadow-2xl object-contain">
