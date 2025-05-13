@@ -166,27 +166,6 @@
         <!-- Add more images here -->
     </div>
 </div>
-
-<script>
-    // Auto-scrolling functionality
-    const scrollContainer = document.getElementById('auto-scroll-container');
-    let scrollAmount = 0;
-    const scrollSpeed = 2; // Adjust speed (pixels per interval)
-    const scrollDelay = 30; // Adjust interval delay (milliseconds)
-
-    function autoScroll() {
-        scrollAmount += scrollSpeed;
-        if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            scrollAmount = 0; // Reset to start when reaching the end
-        }
-        scrollContainer.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth' // Smooth scrolling
-        });
-    }
-
-    setInterval(autoScroll, scrollDelay);
-</script>
             </div>
         </div>
     </header>
